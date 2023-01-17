@@ -1,0 +1,59 @@
+.dashboard-header {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.dashboard-header i, .dashboard-header span {
+    color: var(--light-accent);
+}
+
+.dashboard-header span.breadcumb-item {
+    color: var(--gray-400) ;
+    font-size: 15px;
+}
+
+.active-breadcrumb {
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+.app-drawer {
+    width: 250px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.app-drawer ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.app-drawer ul li a:hover:not(.router-link-exact-active) {
+    background-color: var(--secondary-color);
+    color: var(--light-accent);
+}
+
+.app-drawer ul li .router-link-exact-active {
+    background-color: var(--light-accent);
+    color: var(--secondary-color);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.app-drawer .brand-name {
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.main-dashboard {
+    margin-left: 250px;
+}

@@ -41,8 +41,8 @@ html {
     --primary-font-family: 'Lato', sans-serif;
     /* Main Colors  */
     --primary-color: #003399;
-    /* --secondary-color: #0169FF; */
-    /* --dark-color: #282929; */
+    --secondary-color: #000611;
+    /* --dark-color: #333; */
     --light-accent: #F2F7Ff;
 /* --light-blue: #F2F7FF; */
 /* --light-orange: #FFFAF2; */
@@ -101,12 +101,21 @@ p {
 
 body {
     /* background-color: #fff; */
-    background-color: var(--light-accent);
+    background-color: var(--gray-50);
 }
 
 .row {
     padding: 0;
     margin: 0;
+}
+
+span.avatar {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    /* font-size: 30px; */
 }
 
 .a,

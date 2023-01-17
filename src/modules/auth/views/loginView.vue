@@ -10,7 +10,7 @@
         <small class="text-secondary">Enter correct details to login</small>
       </div>
 
-      <form action="" @submit.prevent="">
+      <form action="" @submit.prevent="login()">
         <div class="mb-3">
           <input type="email" placeholder="johndoe@gmail.com" />
         </div>
@@ -33,3 +33,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    login() {
+      this.$router.push({ name: "dashboard" });
+    },
+  },
+};
+</script>
